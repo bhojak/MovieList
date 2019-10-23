@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MovieList</string>
+
+    <string name="action_refresh">Refresh</string>
+    <string name="menu_movie">Movie</string>
+    <string name="failure_network_connection">No Network Connection.</string>
+    <string name="failure_server_error">Server Error</string>
+    <string name="failure_movies_list_unavailable">Movies Unavailable.</string>
+    <string name="failure_movie_non_existent">Movie Not Existent.</string>
+    <string name="summary">Summary</string>
+
+
+</resources>
