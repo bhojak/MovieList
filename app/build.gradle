@@ -123,6 +123,7 @@ dependencies {
     androidTestImplementation "androidx.test.espresso:espresso-core:$espressoVersion"
     androidTestImplementation "androidx.test.ext:junit:$androidxTest"
     androidTestImplementation "androidx.test:rules:$androidxTestRules"
+    testImplementation "androidx.arch.core:core-testing:$archCompomentVersion"
 
 
 }
