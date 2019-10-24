@@ -15,7 +15,7 @@ buildConfigField 'String', 'TMDB_API_KEY', '"MY-TMDB-API-KEY"'
 # Technical details and  Open-source libraries
 Minimum SDK level 19
 ## Kotlin + MVVM  + Coroutines
-### Architecture
+### Clean architecture patterns - MVVM Architecture
 MVVM Architecture (View - DataBinding - ViewModel - Model)
 * LiveData -  It notifies views of any change in the domain layer data.
 * Lifecycle - dispose of observing data when lifecycle state changes.
