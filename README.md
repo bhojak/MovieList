@@ -1,6 +1,11 @@
 # MovieList
 The MovieDB API based project on Kotlin MVVM architecture + Coroutines + Koin - dependency injection
 
+Where we have 2 main use cases:
+
+* Get a list of movies.
+* Show details for an specific clicked movie.
+
 ## How to build on your environment
 // replace this line in the App build file 
 
