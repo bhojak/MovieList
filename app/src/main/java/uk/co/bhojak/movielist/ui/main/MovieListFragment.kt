@@ -2,6 +2,7 @@ package uk.co.bhojak.movielist.ui.main
 
 import android.content.Context
 import android.content.Intent
+import android.content.res.Configuration
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -17,7 +18,6 @@ import uk.co.bhojak.movielist.core.compose.ViewModelFragment
 import uk.co.bhojak.movielist.data.model.entity.Movie
 import uk.co.bhojak.movielist.databinding.MainFragmentMovieBinding
 import uk.co.bhojak.movielist.ui.detail.MovieDetailActivity
-
 
 
 class MovieListFragment : ViewModelFragment() , MovieListViewHolder.Delegate {
@@ -45,7 +45,12 @@ class MovieListFragment : ViewModelFragment() , MovieListViewHolder.Delegate {
 //
     private fun initializeUI() {
         recyclerView.adapter = MovieListAdapter(this)
-        recyclerView.layoutManager = GridLayoutManager(context, 2)
+
+        if (activity!!.resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT) {
+            recyclerView.layoutManager = GridLayoutManager(context, 2)
+        } else {
+            recyclerView.layoutManager = GridLayoutManager(context, 3)
+        }
         RecyclerViewPaginator(
             recyclerView = recyclerView,
             isLoading = { false },
